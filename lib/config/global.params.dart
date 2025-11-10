@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:my_app/menu/drawer.widget.dart';
+<<<<<<< HEAD
+=======
+import 'package:my_app/config/global.params.dart';
+>>>>>>> a91dba3157045feb26350301988471fefc93d873
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
@@ -34,7 +38,11 @@ class HomePage extends StatelessWidget {
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 40),
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> a91dba3157045feb26350301988471fefc93d873
             // Grille d'images utilisant GlobalParams.accueil
             Wrap(
               spacing: 16.0,
@@ -53,7 +61,11 @@ class HomePage extends StatelessWidget {
                 );
               }).toList(),
             ),
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> a91dba3157045feb26350301988471fefc93d873
             const SizedBox(height: 40),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
@@ -94,7 +106,11 @@ class GlobalParams {
     },
     {
       'title': 'Contacts',
+<<<<<<< HEAD
       'icon': const Icon(Icons.contact_page, color: Colors.blue),
+=======
+      'icon': const Icon(Icons.contacts, color: Colors.blue),
+>>>>>>> a91dba3157045feb26350301988471fefc93d873
       'route': '/contacts'
     },
     {
@@ -151,4 +167,8 @@ class GlobalParams {
       'title': 'Paramètres'
     },
   ];
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a91dba3157045feb26350301988471fefc93d873

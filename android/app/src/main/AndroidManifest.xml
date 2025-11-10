@@ -1,8 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<<<<<<< HEAD
     <!-- Autorisation réseau requise pour que l'application puisse appeler des APIs externes -->
     <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:label="my_app_new"
+=======
+    <application
+        android:label="my_app"
+>>>>>>> a91dba3157045feb26350301988471fefc93d873
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
