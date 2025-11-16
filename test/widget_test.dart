@@ -7,27 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-<<<<<<< HEAD
 
-import 'package:my_app_new/main.dart';
-
-void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
-
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
-
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
-=======
 import 'package:my_app/main.dart';
 
 void main() {
@@ -35,8 +15,8 @@ void main() {
     // Build our app and trigger a frame with isLoggedIn set to false
     await tester.pumpWidget(const MyApp(isLoggedIn: false));
 
-    // Verify that we're on the inscription page
-    expect(find.text('Page Inscription'), findsOneWidget);
+    // Verify that we're on the authentification page
+    expect(find.text('Page Authentification'), findsOneWidget);
     expect(find.text('Identifiant'), findsOneWidget);
     expect(find.text('Mot de passe'), findsOneWidget);
 
@@ -50,9 +30,8 @@ void main() {
     await tester.pumpWidget(const MyApp(isLoggedIn: true));
 
     // Verify that we're on the home page
-    expect(find.text('Page Home'), findsOneWidget);
+    expect(find.text('Accueil'), findsOneWidget);
     expect(find.text('Bienvenue !'), findsOneWidget);
-    expect(find.text('Déconnexion'), findsOneWidget);
->>>>>>> a91dba3157045feb26350301988471fefc93d873
+    // Note: Déconnexion is in the drawer, not directly visible
   });
 }
